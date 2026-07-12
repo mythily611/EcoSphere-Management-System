@@ -82,6 +82,4 @@ cards.forEach(function(card) {
         
         
 
-        alert(title + "\nScore: " + score);
-    });
-});
+    
