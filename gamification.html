@@ -1,0 +1,158 @@
+
+        <!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Gamification</title>
+
+<style>
+
+body{
+
+font-family:Arial;
+background:#eef7ee;
+margin:0;
+
+}
+
+header{
+
+background:#2E7D32;
+color:white;
+padding:20px;
+text-align:center;
+
+}
+
+.container{
+
+width:500px;
+margin:30px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+
+}
+
+.points{
+
+font-size:45px;
+color:green;
+font-weight:bold;
+
+}
+
+.progress{
+
+width:100%;
+height:25px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+
+}
+
+.bar{
+
+width:0%;
+height:100%;
+background:green;
+transition:.5s;
+
+}
+
+button{
+
+margin-top:20px;
+padding:12px 20px;
+background:green;
+color:white;
+border:none;
+cursor:pointer;
+
+}
+
+.badge{
+
+font-size:30px;
+margin-top:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎮 ESG Gamification</h1>
+
+</header>
+
+<div class="container">
+
+<h2>Points</h2>
+
+<div class="points" id="points">0</div>
+
+<h2>Progress</h2>
+
+<div class="progress">
+
+<div class="bar" id="bar"></div>
+
+</div>
+
+<div class="badge" id="badge">
+
+🔰 Beginner
+
+</div>
+
+<button onclick="earnPoints()">
+
+Complete ESG Task
+
+</button>
+
+</div>
+
+<script>
+
+let points=0;
+
+function earnPoints(){
+
+points+=10;
+
+document.getElementById("points").innerHTML=points;
+
+document.getElementById("bar").style.width=points+"%";
+
+if(points>=30)
+
+document.getElementById("badge").innerHTML="🥉 Bronze Badge";
+
+if(points>=60)
+
+document.getElementById("badge").innerHTML="🥈 Silver Badge";
+
+if(points>=100){
+
+document.getElementById("badge").innerHTML="🥇 Gold Badge";
+
+alert("Congratulations! Gold Badge Earned.");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
