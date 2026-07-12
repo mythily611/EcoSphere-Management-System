@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f8f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1b5e20;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: #66bb6a;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+/* ESG Modules */
+section div {
+    background: #e8f5e9;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section div h3 {
+    color: #2e7d32;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+/* List */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer hr {
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+}
